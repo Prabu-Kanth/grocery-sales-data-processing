@@ -35,6 +35,8 @@ The main objectives of this project are:
 
 The project follows a layered data architecture:
 
+
+![Grocery Sales Data Model Pipeline](design/High-level-Structure.png)
 ```text
                     RAW DATA
                        │
@@ -256,6 +258,8 @@ Provides date-related attributes for analytical queries.
 # 📊 Data Model
 
 The Gold layer follows a **Star Schema** design:
+
+![Grocery Sales Star Schema](design/Data-Model.png)
 
 ```text
                     ┌──────────────┐
