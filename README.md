@@ -223,16 +223,6 @@ The Gold layer follows a **Star Schema** design:
 
 ![Grocery Sales Star Schema](design/Model.jpeg)
 
-```text
-                    ┌──────────────┐
-                    │   dim_date   │
-                    └──────┬───────┘
-                           │
-                           │
-┌──────────────┐    ┌──────▼───────┐    ┌───────────────┐
-│ dim_product  │────│  fact_sales  │────│   dim_store   │
-└──────────────┘    └──────────────┘    └───────────────┘
-```
 
 ### Fact Table
 
