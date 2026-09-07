@@ -37,44 +37,6 @@ The project follows a layered data architecture:
 
 
 ![Grocery Sales Data Model Pipeline](design/High-level-Structure.png)
-```text
-                    RAW DATA
-                       │
-                       ▼
-              ┌─────────────────┐
-              │  BRONZE LAYER   │
-              │                 │
-              │ train           │
-              │ test            │
-              │ stores          │
-              │ transactions    │
-              │ oil             │
-              │ holidays_events │
-              └────────┬────────┘
-                       │
-                       ▼
-              ┌─────────────────┐
-              │  SILVER LAYER   │
-              │                 │
-              │    STAGING      │
-              │        +        │
-              │   INTERMEDIATE  │
-              └────────┬────────┘
-                       │
-                       ▼
-              ┌─────────────────┐
-              │   GOLD LAYER    │
-              │                 │
-              │ dim_date        │
-              │ dim_product     │
-              │ dim_store       │
-              │ fact_sales      │
-              └────────┬────────┘
-                       │
-                       ▼
-                ANALYTICS /
-                 REPORTING
-```
 
 The repository also contains architecture and data-model diagrams under the `design/` directory.
 
@@ -259,7 +221,7 @@ Provides date-related attributes for analytical queries.
 
 The Gold layer follows a **Star Schema** design:
 
-![Grocery Sales Star Schema](design/Data-Model.png)
+![Grocery Sales Star Schema](design/Model.jpeg)
 
 ```text
                     ┌──────────────┐
